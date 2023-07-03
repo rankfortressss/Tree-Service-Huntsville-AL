@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Styles */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  padding: 0px 0%;
+  background: white;
+}
+
+a{
+  text-decoration: none;
+}
+a.gien:link {	
+	color: rgb(255, 255, 255);
+}
+	a.gien:visited {
+  	color: white;
+}
+	a.gien:hover {
+  	color: #ffab2e;
+}
+	a.gien:active {
+  	color: white;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  height: 89vh;
+}
+.main-wrapper{
+
+  flex: 2; 
+}
+.side-bar{
+  background: #faf9f9;
+  flex: .3;
+  padding: 0px;
+  /* background-color: white; */
+}
+
+.side-bar ul{
+  padding: 0 0px;
+  list-style: none;
+}
+
+.side-bar{
+  background: rgb(230, 230, 231);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-bar{
+    background: #114;
+    color: #ffffff !important;
+  }
+  .side-bar a{
+    color: white !important;
+  }
+}
+
+/* Navigation Menu Styles */
+
+nav.nav-menu {
+  width: 100%;
+  background-color:#ffffff#fff;
+  position: fixed;
+  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #ecedec;
+  z-index: 10;
+}
+
+nav.nav-menu ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 15px;
+}
+
+.nav-menu .nav-item {
+  padding: 10%;
+  transition: background-color 500ms ease-in-out;
+}
+
+.nav-menu .nav-item:hover {
+  cursor: pointer;
+  background-color: #ffffff#fff;
+}
+
+.nav-menu .nav-item a
+{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/* Main Content Wrapper Styles */
+.main-wrapper {
+  background: #ffffff;
+  padding: 0px 0%;
+
+}
+
+section {
+  margin-bottom: 0px;
+}
+
+section.head,
+section.youtube-embed {
+  text-align: center;
+}
+
+.head1{
+  text-align: left;
+  
+}
+
+.button-link {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 18px 35px;
+  width: fit-content;
+  background: #719c8c;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.3s transform ease-in-out;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.button-link:hover {
+  transform: scale(1.05);
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 28px;
+}
+h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+ul{
+  padding-left: 30px;
+  }
+  
+  .side ul{
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    font-family: "Cormorant SC", sans-serif;
+    font-size:30px;
+
+  }
+
+  ol{
+    padding-left: 40px;
+    }
+    
+    .side ol{
+      text-align: right;
+      margin-bottom: 10px;
+      line-height: 1.5rem;
+      font-family: "Cormorant SC", sans-serif;
+      font-size:30px;
+  
+    }
+
+p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+
+
+img {
+  max-width: 100%;
+  float: left;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.two-col div {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 20%;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .two-col div {
+    width: 100%;
+  }
+
+  .main-wrapper {
+    padding: 5%;
+  }
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image:url("https://huntsvillealtreeservice.com/wp-content/uploads/2022/07/tree-service-huntsville-al.jpeg");
+  /* Set a specific height */
+  height: 700px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom-left-radius: 700px 100px;
+  border-bottom-right-radius: 700px 100px;
+}
+.hero-image1 {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image:url("https://huntsvillealtreeservice.com/wp-content/uploads/2022/07/trees-bg.jpeg");
+  /* Set a specific height */
+  height: 700px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  transform: translate(-30%, -30%);
+  color: #ffffff(255, 255, 255);
+  font-weight:500;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+}
+.social-icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #ffffff;
+  align-items: center;
+
+}
